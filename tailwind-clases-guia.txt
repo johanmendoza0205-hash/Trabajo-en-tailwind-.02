@@ -1,0 +1,36 @@
+GUÍA RÁPIDA DE CLASES TAILWIND
+==============================
+
+HEADER
+<header class="bg-blue-700 text-white shadow-lg">
+- bg-blue-700: fondo azul.
+- text-white: texto blanco.
+- shadow-lg: sombra.
+- max-w-7xl mx-auto: contenido centrado y limitado.
+- flex items-center justify-between: logo a la izquierda, acciones a la derecha.
+- hidden md:flex: navegación visible desde el breakpoint md.
+
+HERO / BANNER
+<section class="grid gap-10 md:grid-cols-2">
+- grid: activa CSS Grid.
+- gap-10: separación entre columnas/elementos.
+- md:grid-cols-2: dos columnas a partir de pantallas medianas.
+- text-4xl sm:text-5xl: título adaptable.
+- rounded-2xl object-cover: imagen recortada con bordes redondeados.
+
+DOS CARDS
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+- grid-cols-1: cards apiladas en móvil.
+- md:grid-cols-2: dos cards lado a lado en escritorio.
+- bg-white p-7 rounded-2xl shadow-md: apariencia de tarjeta.
+- hover:-translate-y-1 hover:shadow-xl transition: elevación visual al pasar el puntero.
+
+FOOTER
+<footer class="bg-gray-900 text-gray-200">
+- flex flex-col: elementos apilados en móvil.
+- md:flex-row: elementos en una fila en escritorio.
+- md:items-center md:justify-between: alinea y reparte el contenido.
+
+IMPORTANTE
+Los breakpoints de Tailwind son mobile-first: las clases sin prefijo se aplican primero
+a móvil; sm:, md:, lg: y xl: agregan cambios en pantallas progresivamente mayores.
